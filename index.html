@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Patrimônio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="form-patrimonio">
+
+        <h2>Formulário de Patrimônio</h2>
+
+        <div class="posicaoImagem">
+            <label class="imagem" tabindex="0">
+                <span class="inserirImagem">Inserir Imagem</span>
+                <input type="file" accept="image/*" class="inputImagem" id="imagem" required>
+            </label>
+        </div>
+
+        <label for="numeroPatrimonio">Número do Patrimônio:</label>
+        <input type="number" id="numeroPatrimonio" class="blocos" name="numeroPatrimonio"  required>
+
+        <label for="descricaoBem">Descrição do Bem:</label>
+        <input type="text" id="descricaoBem" class="blocos" name="descricaoBem" required>
+
+        <label for="dataAquisicao">Data de Aquisição:</label>
+        <input type="date" id="dataAquisicao" class="blocos" name="dataAquisicao" required>
+
+        <label for="valorBem">Valor do Bem:</label>
+        <input type="number" id="valorBem" class="blocos" name="valorBem" step="0.01" required>
+
+        <label for="localizacao">Localização:</label>
+        <input type="text" id="localizacao" class="blocos" name="localizacao" required>
+
+        <label for="estadoConservacao">Estado de Conservação:</label>
+        <select class="blocos" id="estadoConservacao" name="estadoConservacao" required>
+            <option value="Novo">Novo</option>
+            <option value="Bom">Bom</option>
+            <option value="Usado">Usado</option>
+            <option value="Danificado">Danificado</option>
+        </select>
+
+        <label for="responsavel">Responsável:</label>
+        <input type="text" id="responsavel" class="blocos" name="responsavel" required>
+
+        <label for="observacoes">Observações:</label>
+        <textarea class="blocos" id="observacoes" name="observacoes"></textarea>
+
+        <div class="botao">
+            <button type="submit">Registrar Patrimônio</button>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

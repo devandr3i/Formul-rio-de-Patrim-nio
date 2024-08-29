@@ -1,0 +1,117 @@
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:  #A4DBD5;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:  #009686 ;  
+}
+
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} 
+
+button {
+    padding: 10px 15px;
+    background-color: #00685d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28a08c;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 220px;
+    background-color: #00685d;
+    color: rgb(204, 192, 192);
+    border: 2px dashed;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; 
+
+}
+
+.imagem:hover{
+    background-color:#28a08c;
+}
+
+ .imagem img {
+    width: 100%; 
+    height: 100%;
+    background-image: cover;
+    object-fit: cover; 
+}  
+
+.inserirImagem{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.posicaoImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Ajusta a altura do bloco automaticamente */
+    overflow: hidden; /* Garante que nada saia do bloco */
+    position: relative; /* Necessário para posicionar o input sobre a imagem */
+}
+
+.inputImagem {
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer; 
+}
+
+.blocos{
+
+    width: 95%;
+}
